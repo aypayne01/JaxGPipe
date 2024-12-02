@@ -2,32 +2,6 @@
 
 This repository contains a complete implementation of **Gpipe** using **JAX**, demonstrating pipeline parallelism across multiple devices with **mixed precision training** and **quantization**. These techniques enhance performance and reduce memory usage without significantly impacting model accuracy.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Code Overview](#code-overview)
-  - [Model Initialization](#model-initialization)
-  - [Model Partitioning](#model-partitioning)
-  - [Forward and Backward Pass](#forward-and-backward-pass)
-  - [Training Loop](#training-loop)
-- [Detailed Explanation](#detailed-explanation)
-  - [Mixed Precision Training](#mixed-precision-training)
-  - [Quantization](#quantization)
-  - [Pipeline Parallelism](#pipeline-parallelism)
-  - [Data Replication and Sharding](#data-replication-and-sharding)
-  - [Optimizer](#optimizer)
-- [Customization](#customization)
-- [Limitations](#limitations)
-- [Possible Extensions](#possible-extensions)
-- [References](#references)
-- [License](#license)
-
-## Introduction
-
 **Gpipe** is a pipeline parallelism library that enables the training of large neural networks by partitioning them into smaller segments (stages) and distributing these across multiple devices (e.g., GPUs or TPUs). This approach allows for efficient utilization of hardware resources and reduces memory constraints during training.
 
 This implementation leverages **JAX**, a high-performance numerical computing library that provides automatic differentiation, Just-In-Time (JIT) compilation, and parallelization capabilities. The addition of **mixed precision training** and **quantization** further enhances performance by reducing computational overhead and memory usage.
